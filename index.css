@@ -64,6 +64,12 @@ body{
     align-items: center;
 }
 
+section.brand-carousel-container.container{
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
 @media only screen and (max-width: 900px) {
     .desk {
         display: none !important;
