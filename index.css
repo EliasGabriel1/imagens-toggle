@@ -4,34 +4,104 @@
     box-sizing: border-box;
 }
 
-.testediv {
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testediv,
+.testediv2 {
     max-width: 500px;
 }
 
-#second {
+.second,
+.second2 {
     display: none;
     visibility: hidden;
     opacity: 0;
-    transition: display 2s,visibility 1s, opacity 1s linear;
+    transition: display 2s, visibility 1s, opacity 1s linear;
 }
 
-#first {
+.first,
+.first2 {
     display: block;
     visibility: visible;
     opacity: 1;
-    transition: display 2s,visibility 1s, opacity 1s linear;
+    transition: display 2s, visibility 1s, opacity 1s linear;
 }
 
-.testediv>.block {
+.testediv,
+.testediv2 {
+    min-height: 31px;
+    max-height: 38.22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testediv>.block,
+.testediv2>.block {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    transition: display 2s,visibility 1s, opacity 1s linear;
+    transition: display 2s, visibility 1s, opacity 1s linear;
 }
 
-.testediv>.none {
+.testediv>.none,
+.testediv2>.none {
     height: 0 !important;
     visibility: hidden !important;
     opacity: 0 !important;
     transition: visibility 1s, opacity 1s linear;
+}
+
+.brand-carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .desk {
+        display: none !important;
+    }
+
+    .mobile {
+        display: flex !important;
+    }
+
+    .testediv,
+    .testediv2 {
+        min-height: 16.38px;
+        max-height: 18.12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mb-mt-32 {
+        margin: 32px;
+    }
+
+    .brand-carousel {
+        gap: 15px;
+    }
+
+    .container{
+        margin: 0 18px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .desk {
+        display: flex !important;
+    }
+
+    .mobile {
+        display: none !important;
+    }
 }
