@@ -89,10 +89,6 @@ section.brand-carousel-container.container{
         justify-content: center;
     }
 
-    .mb-mt-32 {
-        margin: 32px;
-    }
-
     .brand-carousel {
         gap: 15px;
     }
@@ -111,3 +107,6 @@ section.brand-carousel-container.container{
         display: none !important;
     }
 }
+
+
+
