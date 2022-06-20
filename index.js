@@ -3,7 +3,7 @@ function Temporizador(initiate) {
         $(".first").toggleClass("none");
         $(".second").toggleClass("block");
     }
-    setTimeout(Temporizador, 8000);
+    setTimeout(Temporizador, 3700);
 }
 
 function Temporizador2(initiate) {
@@ -11,10 +11,12 @@ function Temporizador2(initiate) {
         $(".first2").toggleClass("none");
         $(".second2").toggleClass("block");
     }
-    setTimeout(Temporizador2, 4000);
+    setTimeout(Temporizador2, 4900);
 }
 
 $(function () {
     Temporizador2(true);
-    Temporizador(true);
+    setTimeout(() => {
+        Temporizador(true);
+    }, 3150);
 });
